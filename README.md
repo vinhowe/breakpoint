@@ -13,12 +13,10 @@ pip install git+https://github.com/vinhowe/breakpoint.git
 
 ## Usage
 
-To create a CBT entry:
 ```sh
-$ bp
-```
+# create a CBT entry
+bp
 
-To list past CBT entries:
-```sh
-$ bp
+# list past CBT entries
+bp list
 ```
