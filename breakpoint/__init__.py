@@ -2,13 +2,14 @@ from prompt_toolkit import prompt
 from prompt_toolkit.application import get_app
 from prompt_toolkit.key_binding.vi_state import InputMode
 from bullet import Check
+from xdg import xdg_data_home
 import json
 import bullet.colors
 from pathlib import Path
 from datetime import datetime
 
 EMPTY_DATA = {"count": 0, "breakpoints": []}
-DATA_DIR = Path.home() / ".breakpoint"
+DATA_DIR = xdg_data_home() / "breakpoint"
 DATA_FILEPATH = DATA_DIR / "data.json"
 
 
